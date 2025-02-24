@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { PublicClient, createPublicClient, http } from 'viem';
-import { dateToBlock } from './dateToBlock'; // Assuming your dateToBlock function is in 'dateToBlock.ts' or 'dateToBlock.js'
+import { dateToBlock } from './dateToBlock';
 
 async function main() {
   const args = process.argv.slice(2);
@@ -27,9 +27,10 @@ async function main() {
 
   const targetDate = new Date(unixTimestamp * 1000); // Convert seconds to milliseconds
 
-  // Configure your PublicClient - replace with your desired RPC URL
+  // Configure viem PublicClient -
+  // you can replace with your desired RPC URL
   const publicClient: PublicClient = createPublicClient({
-    transport: http('https://eth-mainnet.public.blastapi.io'), // Example: Blast API public endpoint - consider using your own or a different provider
+    transport: http('https://api.securerpc.com/v1'),
   });
 
   try {
