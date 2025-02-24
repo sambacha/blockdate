@@ -1,0 +1,29 @@
+{
+  "name": "blockdate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sambacha/blockdate.git"
+  },
+  "keywords": [],
+  "author": "sam bacha",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sambacha/blockdate/issues"
+  },
+  "homepage": "https://github.com/sambacha/blockdate#readme",
+  "dependencies": {
+    "viem": "^2.23.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.19",
+    "tslib": "^2.8.1",
+    "typescript": "^5.7.3"
+  }
+}
